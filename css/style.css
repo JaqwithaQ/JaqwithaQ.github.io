@@ -3,15 +3,19 @@ General Styles
 * --------------------------------------- */
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
 }
-
-h1,
+header {
+  background-image: url(../images/banner/fleurs.jpg);
+  background-position: center center; 
+}
+h1, 
 h2,
 h3 {
-  font-size: 36px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 42px;
+  font-family: 'Staatliches', Impact, sans-serif;
+
 }
 main,
 header h1,
@@ -20,7 +24,7 @@ nav div {
   margin: auto;
 }
 header {
-  padding: 40px 0;
+  padding: 100px 0;
 }
 nav a {
   padding-right: 20px;
@@ -31,4 +35,8 @@ nav a:hover {
 nav {
   background-color: #ccc;
   padding: 12px;
+}
+
+.endpage {
+  width: 1000px;
 }
