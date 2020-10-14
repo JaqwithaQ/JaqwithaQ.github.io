@@ -135,3 +135,59 @@ a:active{
     box-sizing: border-box;
 }
 
+#main-block{
+    float:left;
+    width: 70%
+}
+
+#sidebar {
+    float:right;
+    width: 30%;
+    background-color: #333333;
+    color:#ffffff;
+    padding:15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width:800px;
+    height:500px;
+    border: 1px solid #000;
+    margin-top:30px;
+    position:relative;
+    background-image: url(../images/bckgrnd.JPG);
+    background-position: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.p-box h1{
+    position:absolute;
+    top:40px;
+    left:200px;
+}
+
+.p-box h2{
+    position:absolute;
+    bottom:40px;
+    right:100px;
+}
+
+.fix-me{
+    position:fixed;
+    top:400px;
+}
+
+.my-list li:first-child{
+    background: blue; /*can use 'background:' and it can be used for either a color or an image*/
+}
+
+.my-list li:last-child{
+    background:red;
+}
+
+.my-list li:nth-child(5){
+    background:yellow;
+}
+
+
