@@ -3,7 +3,7 @@
     padding:0;
 }
 body{
-    background-color: salmon;
+    background-color: white;
    
     font-family: Arial, Helvetica, sans-serif;
 
@@ -35,7 +35,20 @@ a:active{
     margin: auto;
 }
 
+.button{
+    padding: 8px;
+    width:100%;
+    background-color: teal;
+    color:white;
+    padding:10px 15px;
+    border:none;
+    margin: auto;
 
+}
+
+.clr{
+    clear:both;
+}
 
 .box-1 {
     background-color: #333333;
@@ -70,10 +83,12 @@ a:active{
 .box-2 {
     border: 3px dotted #ccc;
     padding:20px;
-    margin:20px;
+    margin:20px 0;
 }
 
 .categories{
+    width:500px;
+    margin:auto;
     border:1px #ccc solid;
     padding:10px;
     border-radius:15px;
@@ -92,11 +107,13 @@ a:active{
 .categories li{
     padding:8px;
     border-bottom:dotted 1px #333;
-    list-style-image:url('../images/checkmark.png');
+    list-style-image: url('../images/checkmark.png');
 }
 
 .my-form{
     padding:20px;
+    width:900px;
+    margin: auto;
 }
 
 .my-form .form-group{
@@ -107,17 +124,14 @@ a:active{
     display:block;
 }
 
-.my-form input [type="text"], .my-form textarea{
-    padding:8px;
+.my-form input[type="text"], .my-form textarea {
+    padding:20px;
     width:100%;
 }
-
 .block{
     float:left;
     width: 33.3%;
-    border:1px solid#ccc;
-    margin: 20px;
-    padding: 10px;
-    box-sizing: border box;
+    border: 1px solid #ccc; 
+    box-sizing: border-box;
 }
 
