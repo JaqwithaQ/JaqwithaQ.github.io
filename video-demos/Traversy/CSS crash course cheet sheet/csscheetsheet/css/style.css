@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: salmon;
+   
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    line-height: 1.6em;
+
+   color: yellowgreen
+
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+a:hover{
+    color:red;
+}
+
+a:active{
+    color:green;
+}
+
+
+.container{
+    width: 500px;
+    margin: auto;
+}
+
+
+
+.box-1 {
+    background-color: #333333;
+    color: #ffffff;
+
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    /*Same as above*/
+    border: 5px red solid;
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+    /*extras*/
+
+    padding:20px;
+    /*same rules apply as of border*/
+    margin: 20px 0;
+}
+
+.box-1 h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform:uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em; /*how to do kerning!*/
+}
+
+.box-2 {
+    border: 3px dotted #ccc;
+    padding:20px;
+    margin:20px;
+}
+
+.categories{
+    border:1px #ccc solid;
+    padding:10px;
+    border-radius:15px;
+}
+
+.categories h2{
+    text-align:center;
+}
+
+.categories ul{
+    padding:0;
+    padding-left:20px;
+    list-style:square;
+}
+
+.categories li{
+    padding:8px;
+    border-bottom:dotted 1px #333;
+    list-style-image:url('../images/checkmark.png');
+}
+
+.my-form{
+    padding:20px;
+}
+
+.my-form .form-group{
+    padding: bottom 30px;
+}
+
+.my-form label{
+    display:block;
+}
+
+.my-form input [type="text"], .my-form textarea{
+    padding:8px;
+    width:100%;
+}
+
+.block{
+    float:left;
+    width: 33.3%;
+    border:1px solid#ccc;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border box;
+}
+
