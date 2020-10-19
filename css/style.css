@@ -10,7 +10,11 @@ header {
   background-image: url(../images/banner/fleurs.jpg);
   background-position: center center; 
 }
-h1, 
+h1 {
+  font-size: 60px;
+  color:black;
+  font-family: 'Staatliches', Impact, sans-serif;
+}
 h2,
 h3 {
   font-size: 42px;
@@ -24,16 +28,17 @@ nav div {
   margin: auto;
 }
 header {
-  padding: 100px 0;
+  padding: 90px 0;
 }
 nav a {
   padding-right: 20px;
 }
 nav a:hover {
-  color: #333;
+  color:red;
 }
 nav {
-  background-color: #ccc;
+  color:#fff;
+  background-color: #333333;
   padding: 12px;
 }
 
