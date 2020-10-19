@@ -29,7 +29,3 @@ body {
   .aquatic .cast img {
     border: 3px solid teal;
   }
-
-  .links{
-    display: flexbox;
-  }
