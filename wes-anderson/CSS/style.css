@@ -33,3 +33,8 @@ body {
   .links{
     display: flexbox;
   }
+
+  .about {
+    display: flex;
+    justify-content: center;
+  }
