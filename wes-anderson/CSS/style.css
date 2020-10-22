@@ -1,15 +1,52 @@
   
+head{
+  margin: o;
+}
 body {
     margin: 0;
   }
   
-  section {
+  .home {
     width: 100vw;
     height: 100vh;
-    background-color: #ccc;
+    background-image: url(../images/misc/titlepage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .aquatic {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/lifeaquatic/the-life-aquatic-title-card.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    }
+  .fox {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/fantasticmr/opening-credits.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex; 
+  }
+  .limited {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/darjeelinglimited/opening-credits.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+  }
+  .grand {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/misc/opening-credits.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
   }
   .cast {
     overflow: hidden;
@@ -25,7 +62,6 @@ body {
   .cast img {
     border-radius: 50%;
   }
-  
   .aquatic .cast img {
     border: 3px solid teal;
   }
@@ -38,3 +74,4 @@ body {
     display: flex;
     justify-content: center;
   }
+
