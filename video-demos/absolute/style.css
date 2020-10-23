@@ -1,6 +1,7 @@
   
 body {
     margin: 0;
+    font-size:36px
   }
   
   section {
@@ -26,6 +27,3 @@ body {
     border-radius: 50%;
   }
   
-  .aquatic .cast img {
-    border: 3px solid teal;
-  }

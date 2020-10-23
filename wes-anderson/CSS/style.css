@@ -12,52 +12,92 @@ body {
     background-image: url(../images/misc/titlepage.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .aquatic {
+  #aquatic {
     width: 100vw;
     height: 100vh;
     background-image: url(../images/lifeaquatic/the-life-aquatic-title-card.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size:cover;
     display: flex;
     }
-  .fox {
+  #fox {
     width: 100vw;
     height: 100vh;
     background-image: url(../images/fantasticmr/opening-credits.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex; 
+    flex-direction: column;
   }
-  .limited {
+
+  .fox a {
+    width: 100vw;
+    background: red;
+    padding: 1.5rem;
+  }
+  #darjeeling {
     width: 100vw;
     height: 100vh;
     background-image: url(../images/darjeelinglimited/opening-credits.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
   }
-  .grand {
+  #grand {
     width: 100vw;
     height: 100vh;
     background-image: url(../images/misc/opening-credits.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
   }
   .cast {
-    overflow: hidden;
-  }
-  .cast ul {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/fantasticmr/opening-credits.jpg);
+    background-size: cover;
+    padding-bottom: 8em;
     display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /**jared edited this one^**/
+  .cast section {
+    background: red;
+  }
+  
+  .cast ul {
     list-style-type: none;
+    overflow-y: auto;
+    overflow-x: auto;
+    display: flex;
+    scrollbar-width: none;
+  }
+
+  .cast :hover {
+    background: rgba(250, 250, 250, 1);
+    background-color: rgba(250, 250, 250, .8);
+    transform: translateX(3px);
   }
   .cast li {
     text-align: center;
     margin: 0 40px;
+    display: inline-block;
+  }
+
+  
+
+  .cast li :hover {
+    transform: rotate(45deg);
   }
   .cast img {
     border-radius: 50%;
@@ -70,8 +110,41 @@ body {
     display: flexbox;
   }
 
+
   .about {
     display: flex;
-    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/fantasticmr/opening-credits.jpg);
+    background-size: cover;
+    flex-direction: column-reverse;
   }
+
+  .about section {
+    height: 30vh;
+  }
+
+  .about section p {
+    padding: 3em;
+  }
+
+
+  .fox-footer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/fantasticmr/motorcycle.jpg);
+    background-size: cover;
+    flex-direction: column-reverse;
+  }
+
+  .about section {
+     height: 30vh;
+  }
+  /**helps with weird margins that apppear in about section**/
+
+  .about section p {
+     padding: 2em;
+  }
+  /**also helps with weird margins that apppear in about section**/
 
