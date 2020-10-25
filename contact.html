@@ -6,6 +6,45 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="https://getsimpleform.com/messages?form_api_token=83c612f130738e8bb34867f5814fe9db" method="post">
+        <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+        <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />
+        <!-- all your input fields here.... -->
+    <fieldset>
+        <legend>Contact Details</legend>
+            <label for="first name">First Name</label>
+            <input type="text" name="first name"required="required"/>
+            <br>
+            <label for="last name">Last Name</label><input type="text" name="last name" required="required"/>
+            <br>
+            <label for="email">Email</label><input type="email" name="email" required="required"/>
+    </fieldset>
+        <br>
+        <p>Pick one of the following:</p>
+        <br>
+        <input type="radio"name="categories" value="beans">Beans
+        <br>
+        <input type="radio" name="categories" value="coolbeans">Cool Beans
+        <br>
+        <input type="radio" name="categories" value="toebeans">Toe Beans
+        <br>
+        <input type="radio" name="categories" value="jellybeans">Jelly Beans
+        <br>
+        <input type="radio" name="categories" value="meanbeans">Mean Beans 
+        <p>Tell me your thought, for I have none...</p>
+        <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Go on...SPEAK!"></textarea>
+        <br>
+        <p>Which devices?</p>
+        <select name="devices" id="devices">
+            <option value="Tablet">Tablet</option>
+            <option value="Cellphone">Cellphone</option>
+            <option value="Laptop">Laptop</option>
+        </select>
+        <br>
+        <p>Away with you now!</p>
+        <br>
+        <input type="submit" value="Submit"/>
+
+    </form>
 </body>
 </html>
