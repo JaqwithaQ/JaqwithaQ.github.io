@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Contact</title>
 </head>
-<body>
-    <section class="parent">
-        <div class="child">
+<body class="contact">
             <form action="https://getsimpleform.com/messages?form_api_token=83c612f130738e8bb34867f5814fe9db" method="post">
                 <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
                 <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />
                 <!-- all your input fields here.... -->
             <fieldset id="contact">
-                <legend>Contact Details</legend>
+               <h1>CONTACT</h1>
                     <label for="first name">First Name</label>
+                    <br>
                     <input type="text" name="first name"required="required"/>
                     <br>
-                    <label for="last name">Last Name</label><input type="text" name="last name" required="required"/>
+                    <label for="last name">Last Name</label>
                     <br>
-                    <label for="email">Email</label><input type="email" name="email" required="required"/>
+                    <input type="text" name="last name" required="required"/>
+                    <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" required="required"/>
             </fieldset>
                 <br>
-                <p>Pick one of the following:</p>
-                <br>
+                <h2>PICK:</h2>
+                
                 <input type="radio"name="categories" value="beans">Beans
                 <br>
                 <input type="radio" name="categories" value="coolbeans">Cool Beans
@@ -33,10 +37,10 @@
                 <input type="radio" name="categories" value="jellybeans">Jelly Beans
                 <br>
                 <input type="radio" name="categories" value="meanbeans">Mean Beans 
-                <p>Tell me your thought, for I have none...</p>
+                <h2>THOUGHTS?</h2>
                 <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Go on...SPEAK!"></textarea>
                 <br>
-                <p>Which devices?</p>
+                <h2>DEVICES?</h2>
                 <select name="devices" id="devices">
                     <option value="Tablet">Tablet</option>
                     <option value="Cellphone">Cellphone</option>
@@ -45,7 +49,7 @@
                 <br>
                 <p>Away with you now!</p>
                 <br>
-                <input type="submit" value="Submit"/>
+                <input type="submit" value="Submit" class="button"/>
 
             </form>
         </div>
