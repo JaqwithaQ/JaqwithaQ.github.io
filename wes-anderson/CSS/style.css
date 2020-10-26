@@ -6,6 +6,12 @@ body {
     margin: 0;
   }
   
+  h1 {
+    font-family: sans-serif;
+    font-size: 92px;
+    color: orange;
+  }
+
   .home {
     width: 100vw;
     height: 100vh;
@@ -17,6 +23,22 @@ body {
     align-items: center;
     justify-content: center;
   }
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items:space-between;
+    background-color: black;
+    padding: 1em;
+  }
+  /**^area behind links^**/
+
+  a {
+    color: orange;
+    font-family: sans-serif;
+    font-size: 26px;
+  }
+  /**^area in front of links**/
+
   #aquatic {
     width: 100vw;
     height: 100vh;
@@ -60,7 +82,51 @@ body {
     background-size: cover;
     display: flex;
   }
-  .cast {
+/**cover pages**/
+
+  /**cast begin**/
+  .aquatic-cast {
+    width: 100vw;
+    height: 100vh;
+    background-color: teal;
+    background-size: cover;
+    padding-bottom: 8em;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .aquatic-cast section {
+    background: black;
+  }
+  
+  .aquatic-cast ul {
+    list-style-type: none;
+    overflow-y: auto;
+    overflow-x: auto;
+    display: flex;
+    scrollbar-width: none;
+  }
+
+  .aquatic-cast :hover {
+    background: rgba(250, 250, 250, 1);
+    background-color: rgba(250, 250, 250, .8);
+    transform: translateX(3px);
+  }
+
+  .aquatic-cast li {
+    text-align: center;
+    margin: 0 40px;
+    display: inline-block;
+  }
+
+  .aquatic-cast li :hover {
+    transform: rotate(45deg);
+  }
+  .aquatic-cast img {
+    border-radius: 50%;
+  }
+  
+  .fox-cast {
     width: 100vw;
     height: 100vh;
     background-color: chocolate;
@@ -70,12 +136,11 @@ body {
     flex-direction: column-reverse;
   }
 
-  /**jared edited this one^**/
-  .cast section {
+  .fox-cast section {
     background: black;
   }
   
-  .cast ul {
+  .fox-cast ul {
     list-style-type: none;
     overflow-y: auto;
     overflow-x: auto;
@@ -83,49 +148,188 @@ body {
     scrollbar-width: none;
   }
 
-  .cast :hover {
+  .fox-cast :hover {
     background: rgba(250, 250, 250, 1);
     background-color: rgba(250, 250, 250, .8);
     transform: translateX(3px);
   }
 
-  .cast li {
+  .fox-cast li {
     text-align: center;
     margin: 0 40px;
     display: inline-block;
   }
 
-  .cast li :hover {
+  .fox-cast li :hover {
     transform: rotate(45deg);
   }
-  .cast img {
+  .fox-cast img {
     border-radius: 50%;
   }
-  .aquatic .cast img {
-    border: 3px solid teal;
+
+  .limited-cast {
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+    background-size: cover;
+    padding-bottom: 8em;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
-  .links{
-    display: flexbox;
+  .limited-cast section {
+    background: black;
+  }
+  
+  .limited-cast ul {
+    list-style-type: none;
+    overflow-y: auto;
+    overflow-x: auto;
+    display: flex;
+    scrollbar-width: none;
   }
 
-  .about {
+  .limited-cast :hover {
+    background: rgba(250, 250, 250, 1);
+    background-color: rgba(250, 250, 250, .8);
+    transform: translateX(3px);
+  }
+
+  .limited-cast li {
+    text-align: center;
+    margin: 0 40px;
+    display: inline-block;
+  }
+
+  .limited-cast li :hover {
+    transform: rotate(45deg);
+  }
+  .limited-cast img {
+    border-radius: 50%;
+  }
+
+  .grand-cast {
+    width: 100vw;
+    height: 100vh;
+    background-color: pink;
+    background-size: cover;
+    padding-bottom: 8em;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .grand-cast section {
+    background: black;
+  }
+  
+  .grand-cast ul {
+    list-style-type: none;
+    overflow-y: auto;
+    overflow-x: auto;
+    display: flex;
+    scrollbar-width: none;
+  }
+
+  .grand-cast :hover {
+    background: rgba(250, 250, 250, 1);
+    background-color: rgba(250, 250, 250, .8);
+    transform: translateX(3px);
+  }
+
+  .grand-cast li {
+    text-align: center;
+    margin: 0 40px;
+    display: inline-block;
+  }
+
+  .grand-cast li :hover {
+    transform: rotate(45deg);
+  }
+  .grand-cast img {
+    border-radius: 50%;
+  }
+
+  /**cast section end**/
+
+  .aquatic-about {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/lifeaquatic/bigpanoramicpic.jpeg);
+    background-size: cover;
+    flex-direction: column-reverse;
+    color: orange;
+    font-family: sans-serif;
+    font-size: 48px;
+  }
+
+  .aquatic-about section {
+    height: 30vh;
+  }
+
+  .aquatic-about section p {
+    padding: 3em;
+  }
+
+  .fox-about {
     display: flex;
     width: 100vw;
     height: 100vh;
     background-image: url(../images/fantasticmr/onthehill.jpg);
     background-size: cover;
     flex-direction: column-reverse;
+    color: orange;
+    font-family: sans-serif;
+    font-size: 48px;
   }
 
-  .about section {
+  .fox-about section {
     height: 30vh;
   }
 
-  .about section p {
+  .fox-about section p {
     padding: 3em;
   }
 
+  .limited-about {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/darjeelinglimited/bunk\ beds.jpg);
+    background-size: cover;
+    flex-direction: column-reverse;
+    color: orange;
+    font-family: sans-serif;
+    font-size: 48px;
+  }
+
+  .limited-about section {
+    height: 30vh;
+  }
+
+  .limited-about section p {
+    padding: 3em;
+  }
+
+  .grand-about {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/grandbudapest/honeypot.jpg);
+    background-size: cover;
+    flex-direction: column-reverse;
+    color: orange;
+    font-family: sans-serif;
+    font-size: 48px;
+  }
+
+  .grand-about section {
+    height: 30vh;
+  }
+
+  .grand-about section p {
+    padding: 3em;
+  }
 /** sample code
 #pond{
   display:flex;
@@ -151,6 +355,25 @@ body {
     background-size: cover;
     flex-direction: column-reverse;
   }
+
+  .aquatic-footer {
+    display:flex;
+    width: 100vw;
+    height:100vh;
+    background-image: url(../images/lifeaquatic/jeffgoldblum.jpg);
+    background-size:cover;
+    background-size: cover;
+    flex-direction: column-reverse;
+    }
+
+  .grand-footer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/grandbudapest/cute.jpg);
+    background-size: cover;
+    flex-direction: column-reverse;
+  }  
 
   .about section {
      height: 30vh;
