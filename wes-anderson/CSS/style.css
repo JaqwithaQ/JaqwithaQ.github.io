@@ -7,8 +7,9 @@ body {
   }
   
   h1 {
-    font-family: sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 92px;
+    font-weight: bold;
     color: orange;
   }
 
@@ -25,17 +26,19 @@ body {
   }
   .links {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items:space-between;
     background-color: black;
-    padding: 1em;
+    padding: 8px;
   }
   /**^area behind links^**/
 
   a {
     color: orange;
-    font-family: sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
   }
   /**^area in front of links**/
 
@@ -88,7 +91,7 @@ body {
   .aquatic-cast {
     width: 100vw;
     height: 100vh;
-    background-color: teal;
+    background-color: black;
     background-size: cover;
     padding-bottom: 8em;
     display: flex;
@@ -124,12 +127,13 @@ body {
   }
   .aquatic-cast img {
     border-radius: 50%;
+    max-height: 500px;
   }
   
   .fox-cast {
     width: 100vw;
     height: 100vh;
-    background-color: chocolate;
+    background-color: #8C4B21;
     background-size: cover;
     padding-bottom: 8em;
     display: flex;
@@ -164,13 +168,13 @@ body {
     transform: rotate(45deg);
   }
   .fox-cast img {
-    border-radius: 50%;
+    max-height: 500px;
   }
 
   .limited-cast {
     width: 100vw;
     height: 100vh;
-    background-color: green;
+    background-color: #539C85;
     background-size: cover;
     padding-bottom: 8em;
     display: flex;
@@ -179,6 +183,7 @@ body {
 
   .limited-cast section {
     background: black;
+    background-size: cover;;
   }
   
   .limited-cast ul {
@@ -205,13 +210,13 @@ body {
     transform: rotate(45deg);
   }
   .limited-cast img {
-    border-radius: 50%;
+    max-height: 500px;
   }
 
   .grand-cast {
     width: 100vw;
     height: 100vh;
-    background-color: pink;
+    background-color: #524859;
     background-size: cover;
     padding-bottom: 8em;
     display: flex;
@@ -246,7 +251,7 @@ body {
     transform: rotate(45deg);
   }
   .grand-cast img {
-    border-radius: 50%;
+    max-height: 500px;
   }
 
   /**cast section end**/
@@ -264,7 +269,7 @@ body {
   }
 
   .aquatic-about section {
-    height: 30vh;
+    height: 10vh;
   }
 
   .aquatic-about section p {
@@ -284,7 +289,7 @@ body {
   }
 
   .fox-about section {
-    height: 30vh;
+    height: 10vh;
   }
 
   .fox-about section p {
@@ -304,7 +309,7 @@ body {
   }
 
   .limited-about section {
-    height: 30vh;
+    height: 12vh;
   }
 
   .limited-about section p {
@@ -324,7 +329,7 @@ body {
   }
 
   .grand-about section {
-    height: 30vh;
+    height: 10vh;
   }
 
   .grand-about section p {
