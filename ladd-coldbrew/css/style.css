@@ -1,3 +1,21 @@
 body {
+    margin: o;
     background-color: skyblue;
+}
+
+@media (min-width: 700px) {
+    body {
+      background: green;
+    }
+  }
+
+.location {
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+}
+
+.footer {
+    display: flex;
+    flex-direction: flex-end;
 }
