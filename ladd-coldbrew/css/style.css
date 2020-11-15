@@ -46,11 +46,16 @@ nav {
   font-family: 'Raleway', sans-serif;
   font-weight: medium;
   display: vertical;
+  width: 100;
 }
 
 .landing img{
   width: 100;
   height: auto;
+}
+
+.landing .butts {
+  background-image: url(../images/honey.png);
 }
 
 @media (min-width: 700px) {
