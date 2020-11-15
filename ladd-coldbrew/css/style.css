@@ -1,21 +1,93 @@
 body {
     margin: o;
-    background-color: skyblue;
+}
+
+header {
+  padding: 5em;
+  border-width: 6px;
+  border-color: chocolate;
+  font-family: 'Raleway', sans-serif;
+  font-weight: medium;
+}
+
+nav div {
+  width: 85%;
+  margin: auto;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+header {
+  padding: 90px 0;
+}
+nav a {
+  padding-right: 20px;
+}
+nav a:hover {
+  color:salmon;
+}
+nav {
+  color:grey;
+  padding: 12px;
+}
+
+.logo{
+  text-align:right;
+}
+
+.logo img {
+  margin:6px 0 10px 0;
+  width: 75%;
+  height: auto;
+}
+
+/**copy pasta above**/
+
+.landing {
+  font-family: 'Raleway', sans-serif;
+  font-weight: medium;
+  display: vertical;
+}
+
+.landing img{
+  width: 100;
+  height: auto;
 }
 
 @media (min-width: 700px) {
     body {
-      background: green;
+      display:flex;
+      font-size: 14px;
+      text-align: center;
     }
   }
 
+.products {
+  font-family: 'Raleway', sans-serif;
+  font-weight: medium;
+  font-size: 21px;
+}
+
+.products img{
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 36px;
+}
+
 .location {
-    display: flex;
-    width: 50vw;
-    height: 50vh;
+    display: vertical;
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+}
+
+.location img{
+  width: 100%;
+  height: auto;
 }
 
 .footer {
     display: flex;
-    flex-direction: flex-end;
+    align-items: flex-end;
 }
