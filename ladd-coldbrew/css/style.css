@@ -312,8 +312,7 @@ footer {
 
 }
 
-@media (min-width: 768px) {
-
-}
+/*padding! add some to images
+mobile first means code non media queries for mobile (some media queries too) then do media queries for larger ones*/
 
 
