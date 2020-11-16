@@ -213,7 +213,6 @@ footer {
 
 .hamburger:after {
   top: 10px;
-
 }
 
 .icon.active .hamburger {
@@ -264,7 +263,9 @@ footer {
       display: none;
   }
 /* END OF Mobile Menu */
+
 .icon { display: block; }
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -295,7 +296,12 @@ footer {
   .menu-desktop a:hover {
       color:#F39F92;
   }
-  .icon { display: none; }
+
+
+  .icon {
+    display: none;
+  }
+
   .desktop {
       display: flex;
       flex-direction: row;
