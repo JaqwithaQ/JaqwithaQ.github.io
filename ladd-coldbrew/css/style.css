@@ -2,11 +2,12 @@ body {
     margin: o;
     display: flex;
     flex-direction: column;
+    background-color: #FFF3DD;
 }
 
 header {
   padding: 5em;
-  border-bottom: 5px chocolate solid;
+  border-bottom: 5px  #914712 solid;
   font-family: 'Raleway', sans-serif;
   font-weight: medium;
   margin-bottom: 5em;
@@ -23,20 +24,20 @@ nav a {
   padding-right: 20px;
 }
 nav a:hover {
-  color:salmon;
+  color:#F39F92;
 }
 nav {
-  color:grey;
+  color:  #914712;
   padding: 12px;
 }
 
 #logo{
-  text-align:right;
+  text-align:left;
 }
 
 #logo img {
   margin:6px 0 10px 0;
-  width: 75%;
+  width: 50%;
   height: auto;
 }
 
@@ -65,8 +66,64 @@ nav {
   height: auto;
 }
 
+.button {
+  padding: 8px;
+  width: 25%;
+  background-color: #914712;
+  color:white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  padding:10px 15px;
+  border-radius: 12px;
+  margin: auto;
+}
+
+#lavender-image {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#honey-image {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#cardomom-image {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#lavender {
+  color: #AA93D7;
+  text-align: center;
+}
+
+#honey {
+  color: #EFBC4D;
+  text-align: center;
+}
+
+#cardomom {
+  color: #DD5A44;
+  text-align: center;
+}
+
 h2 {
   font-size: 36px;
+  color: #914712;
 }
 
 .location {
@@ -80,11 +137,14 @@ h2 {
   height: auto;
 }
 
-.footer {
-    display: flex;
+footer {
+    display: column;
     align-items: flex-end;
     font-family: 'Raleway', sans-serif;
     font-weight: medium;
+    border-top: 5px #914712;
+    padding: 5em;
+    margin: 5em;
 }
 
 /* START of Mobile Menu */
@@ -109,11 +169,16 @@ h2 {
   z-index: 1000;
 }
 
+#logo {
+  margin-left: 0%;
+  padding-left: 0%;
+}
+
 .hamburger {
   width: 40px;
   height: 4px;
   line-height: 70px;
-  background: chocolate;
+  background: #914712;
   border-radius: 5px;
   position: absolute;
   top: 50%;
@@ -129,7 +194,7 @@ h2 {
   position: absolute;
   width: 40px;
   height: 4px;
-  background: chocolate;
+  background: #914712;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,.2);
   transition: .5s;
@@ -159,14 +224,15 @@ h2 {
 }
 
 .menu-mobile {
-  background-color: yellow;
-  height: 100vh;
+  background-color: #FFE0AA;
+  height: 50vh;
   position: fixed;
   width: 100%;
   z-index: 999;
   padding-top: 150px;
   font-family: 'Raleway', sans-serif;
   font-weight: medium;
+  font-size: 21px;
   text-align: center;
 }
 
@@ -178,12 +244,12 @@ h2 {
 .menu-mobile a {
   clear: right;
   text-decoration: none;
-  color: #333;
+  color:  #914712;
   height: 70px;
   line-height: 70px;
 }
 .menu-mobile a:hover {
-  color: red;
+  color: #F39F92;
 }
 
 .desktop, .menu-desktop, .menu-mobile {
@@ -215,11 +281,11 @@ h2 {
       height: 0;
       line-height: 50px;
       text-decoration: none;
-      color: #333;
+      color: #914712;
       justify-content: space-evenly;
   }
   .menu-desktop a:hover {
-      color:salmon;
+      color:#F39F92;
   }
 
   .desktop {
@@ -236,7 +302,7 @@ h2 {
 
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   body {
     font-size: 14px;
     text-align: center;
