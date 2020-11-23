@@ -279,7 +279,6 @@ footer {
       flex-direction: row;
       height: 0;
       text-align: right;
-      position: absolute;
       top: 0;
       right: 0;
   }
@@ -318,13 +317,40 @@ footer {
     text-align: center;
   }
   header {
-    padding: 1.5em;
+    padding: 4em;
+  }
+
+  .landing {
+    font-family: 'Raleway', sans-serif;
+    font-weight: medium;
+    display: vertical;
+    width: 100;
+  }
+  
+  .landing img{
+    width: 75%;
+    height: auto;
+  }
+
+  .location img{
+    width: 75%;
+    height: auto;
+  }
+
+  #logo img {
+    margin:6px 0 10px 0;
+    display: flex;
+    width: 240px;
+    height: auto;
   }
   /* END of desktop menu for 768 media query */
 
+
+  
 }
 
-/*padding! add some to images
+/*padding! add some to images,
 mobile first means code non media queries for mobile (some media queries too) then do media queries for larger ones*/
+
 
 
