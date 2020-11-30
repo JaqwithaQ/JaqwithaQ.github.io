@@ -1,0 +1,139 @@
+        <!-- <h1 id="heading1">Heading One</h1>
+        <p id="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span> Labore quidem excepturi cupiditate mollitia laboriosam quae quas incidunt odit repellat,</span> molestiae odio praesentium facilis porro alias soluta maxime debitis tenetur deserunt recusandae. Assumenda repudiandae unde eius necessitatibus! Ipsum assumenda nesciunt ipsam.</p>
+
+        <h1 class="heading2">Heading Two</h1>
+        <p class="para2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span> Labore quidem excepturi cupiditate mollitia laboriosam quae quas incidunt odit repellat,</span> molestiae odio praesentium facilis porro alias soluta maxime debitis tenetur deserunt recusandae. Assumenda repudiandae unde eius necessitatibus! Ipsum assumenda nesciunt ipsam.</p>
+
+        <ul id="list">
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+        </ul>
+
+        <input type="button" value="Button 1">
+        <input type="submit" value="Button 1">
+        <input type="text">
+        <a href="http://google.com">Google</a>
+        <a href="http://yahoo.com">Yahoo</a> -->
+        
+        <!-- <h3>Mouse Events</h3>
+        <button id="btn1">Button 1</button>
+        <button id="btn2">Button 2</button>
+        <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi quidem facere, saepe quod et mollitia nobis veritatis a possimus facilis, atque impedit nostrum eius obcaecati aliquam. Vel, dolores rem architecto voluptates deleniti ab veniam! Fugiat, itaque. Provident, eveniet quam!</p>
+        <form id="form">
+            <label>Name</label><br>
+            <input type="text" id="name" name="name">
+            <br>
+            <label>Email</label><br>
+            <input type="text" id="email" name="email">
+            <br>
+            <label>Gender</label><br>
+            <select name="gender" id="gender">
+                <option value="meh">Meh</option>
+                <option value="sure">Sure</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+        </form> -->
+
+    // selectors:
+        // id's are rep with #
+        // classes are rep with .
+        // $('h1').hide();    
+        // $('h1#heading1').hide();
+        // $('.heading2').hide();
+
+        // $('p span').css('color', 'red');
+        // if you remove the p then all spans, no matter where they are, will be red 
+
+        // $('ul#list li:first').css('color','red');
+        // $('ul#list li:even').css('background-color','yellow');
+        // can use hex values in jquery
+
+        // $('ul#list li:nth-child(3n').css('list-style','none');
+
+        // $(':button').hide();
+        // $(':submit').hide();
+        // $(':text').hide();
+        // $('[href]').css('color', 'red');
+        // $('a[href="http://yahoo.com"]').css('color', 'green');
+        // $('*').hide();
+        //^^^asterisk will grab everything and attribute command to that 
+
+    // events:
+        // $('#btn1').click(function() {
+        //     alert('Button Clicked!');
+        // });
+
+    // $(document).ready(function(){
+    //         // insert jQueary:tells jquery not to run any commands until document is loaded!
+    //     });
+
+        // $('#btn1').on('click',function(){
+        //     alert('Button Clicked!');
+        // });   
+    
+        // $('#btn1').on('click',function(){
+        //     // $('.para1').hide();
+        //     $('.para1').toggle();
+        // });
+
+        // $('#btn2').on('click',function(){
+        //     $('.para1').toggle();
+        // });
+
+        // $('#btn2').hover(function(){
+        //     $('.para1').toggle();
+        // });
+
+        // $('#btn2').on('mouseenter',function(){
+        //     $('.para1').toggle();
+        // });
+
+        // $('#btn2').on('mouseleave',function(){
+        //     $('.para1').toggle();
+        // });
+
+        // $('#btn1').on('mousedown',function(){
+        //     $('.para1').toggle();
+        // });
+
+        // $('#btn1').on('mouseup',function(){
+        //     $('.para1').toggle();
+        // });
+
+        // $('#btn1').click(function(e) {
+        //     // alert(e.currentTarget.id);
+        //     alert(e.currentTarget.innerhtml);
+        // });
+        
+        // $('#btn1').on('mousemove',function(e) {
+        //     console.log('Coords:Y' + e.clientY + "X:" +e.clientX);
+        // });
+    // form events:
+
+        // $('input').focus(function(){
+        //     // alert('Focus');
+        //     $(this).css('background', 'pink');
+        // });
+
+        // $('input').blur(function(){
+        //     // alert('Focus');
+        //     $(this).css('background', 'white');
+        // });
+
+        // $('input').keyup(function(e){
+        //     console.log(e.target.value);
+        // });
+
+        // $('select#gender').change(function(){
+        //     alert('Changed');
+        // });
+
+        // $('#form').submit(function(){
+        //     console.log('Submitted');
+        // });
