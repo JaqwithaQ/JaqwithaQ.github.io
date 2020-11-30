@@ -343,6 +343,36 @@ footer {
     width: 240px;
     height: auto;
   }
+
+
+body, #horizontalAccordian, #horizontalAccordian, li{
+  padding: 0px;
+  margin: 0px;
+}
+
+#horizontalAccordian {
+  background: #888888;
+  width: 800px;
+  height: 200px;
+  overflow: hidden;
+  margin: 10px auto;
+}
+#horizontalAccordian>li{
+  display: block;
+  text-align: top;
+}
+#horizontalAccordian>li:nth-child(odd){
+  width: 130px;
+  height: 400vh;
+  display: inline-block;
+}
+
+#lavender-image {
+  width: 30vw;
+  height: auto;
+}
+
+
   /* END of desktop menu for 768 media query */
 
 
