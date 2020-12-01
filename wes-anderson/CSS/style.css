@@ -40,6 +40,10 @@ body {
     font-weight: bold;
     text-decoration: none;
   }
+
+  a:hover{
+    color: white;
+  }
   /**^area in front of links**/
 
   #aquatic {
@@ -256,6 +260,8 @@ body {
 
   /**cast section end**/
 
+  /* about begins */
+
   .aquatic-about {
     display: flex;
     width: 100vw;
@@ -335,14 +341,10 @@ body {
   .grand-about section p {
     padding: 3em;
   }
-/** sample code
-#pond{
-  display:flex;
-  flex-direciton: row-reverse;
-  justify-content: center;
-  align-items:flex-end;
-  }
-  **/
+
+  /* about ends */
+
+  /* footer images begin */
   .fox-footer {
     display: flex;
     width: 100vw;
@@ -379,6 +381,8 @@ body {
     background-size: cover;
     flex-direction: column-reverse;
   }  
+
+  /* footer end */
 
   .about section {
      height: 30vh;
