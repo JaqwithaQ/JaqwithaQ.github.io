@@ -11,7 +11,6 @@ header {
     border-bottom: 5px #914712 solid;
     font-family: 'Raleway', sans-serif;
     font-weight: medium;
-    margin-bottom: 5em;
 }
 
 nav div {
@@ -45,6 +44,7 @@ nav {
 }
 
 .landing {
+    padding-top: 5em;
     font-family: 'Raleway', sans-serif;
     font-weight: medium;
     display: vertical;
@@ -153,6 +153,7 @@ h2 {
 }
 
 .location img {
+    padding-top: 5em;
     width: 100%;
     height: auto;
 }
@@ -467,3 +468,5 @@ footer {
 
 /*padding! add some to images,
 mobile first means code non media queries for mobile (some media queries too) then do media queries for larger ones*/
+
+src: url('webfont.otf?#iefix') format('opentype')
