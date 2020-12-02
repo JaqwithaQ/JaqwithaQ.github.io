@@ -137,10 +137,10 @@ nav {
     text-align: center;
 }
 
-h2 {
+/* h2 {
     font-size: 36px;
     color: #914712;
-}
+} */
 
 .product-info {
     text-align: left;
@@ -448,6 +448,7 @@ footer {
         border-radius: 25px;
     }
     .accordion-key h1 {
+        font-size: 40px;
         transform: rotate(90deg);
         transform-origin: center;
         margin: 0;
@@ -469,4 +470,4 @@ footer {
 /*padding! add some to images,
 mobile first means code non media queries for mobile (some media queries too) then do media queries for larger ones*/
 
-src: url('webfont.otf?#iefix') format('opentype')
+/* src: url('webfont.otf?#iefix') format('opentype') */
