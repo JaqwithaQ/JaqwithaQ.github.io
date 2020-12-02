@@ -369,7 +369,7 @@ footer {
     margin: 0px;
   } */
     #horizontalAccordion {
-        background: #888888;
+        background: #FFF3DD;
         width: 100vw;
         height: 75vh;
         overflow: hidden;
@@ -409,7 +409,7 @@ footer {
         display: flex;
         justify-content: center;
         /* background: cyan; */
-        background: FFF3DD;
+        background: #FFF3DD;
         padding-left: 1em;
     }
     .product-image-container img {
@@ -438,12 +438,13 @@ footer {
         justify-items: center;
     }
     .accordion-key {
-        background: purple;
+        background: #FFF3DD;
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: auto;
-        border-right: black solid 3px;
+        border-right: black solid 8px;
+        border-radius: 25px;
     }
     .accordion-key h1 {
         transform: rotate(90deg);
