@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--meta tags need finishing-->
+    <!--meta tags need finishing-->
     <meta property="og:title" content="Ladd Cold Brew: Products">
     <meta property="og:description" content="Three distinct flavors!">
     <meta property="og:image" content="">
     <meta property="og:url" content="https://jaqwithaq.github.io/ladd-coldbrew/products.html">
     <meta name="" content="">
-<!--meta tags need finishing-->
+    <!--meta tags need finishing-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Products</title>
 </head>
-<body>
+<main>
+    <!-- inside of main, header goes first -->
     <header>
         <nav class="nav">
-        <div id="logo">
-            <img src="images/logo.png" alt="Ladd Cold Brew"/></a>
-        </div>
+            <div id="logo">
+                <img src="images/logo.png" alt="Ladd Cold Brew" /></a>
+            </div>
             <div class="icon">
                 <div class="hamburger"></div>
             </div>
@@ -29,7 +31,7 @@
                 <a href="index.html">About</a>
                 <a href="products.html">Products</a>
                 <a href="locations.html">Locations</a>
-            </div>          
+            </div>
         </nav>
         <nav class="desktop">
             <div class="menu-desktop">
@@ -41,91 +43,107 @@
 
     </header>
 
-    <main>
-
-        <div class="products">
-        <ul id="horizontalAccordian">
-            <div id="lavender-image">
-            <img src="images/lavender.png" alt="Lavendar ColdBrew">
-            </div>
-            <li><p><h2 id="lavender">Lavender</h2></li>
-
-            <li><div class="product-info">
-                For an herbal twist in your morning wake-up, lavender cold brew is perfect for the adventurous. Astringent and earthy, lavender’s light, floral notes balance well with the nutty sweetness of our cold brew.
-                <br>
-                <br>
-                Comes in 10 oz bottles
-                <br>
-                <em>$3.50 sinlge</em>
-                <br>
-                <em>$8.05 6 pack</em>
-                </p>
-                <br>
-                <input type="Order Now!" value="Order Now!" class="button"/>
-            </div>
-            </li>
-
-
-            <div id="honey-image">
-            <img src="images/honey.png" alt="Honey ColdBrew">
-            </div>
-                <p>
-                <li><h2 id="honey">Honey</h2></li>
-
-                <li><div class="product-info">
-                Described as floral and sometimes fruity, our honey flavored cold brew naturally sweetens your morning. Honey’s earthy sweetness lights up our locally sourced coffee brew and is made with naturally sourced honey from healthy Oregon bees.
-                <br>
-                <br>
-                Comes in 10 oz bottles
-                <br>
-                <em>$3.50 sinlge</em>
-                <br>
-                <em>$8.05 6 pack</em></p>
-                <br>
-                <input type="Order Now!" value="Order Now!" class="button"/>
-                </div>
+    <!-- inside of main, body goes second -->
+    <body>
+        <section class="products">
+            <ul id="horizontalAccordion">
+                <!-- only li as children of ul's -->
+                <li id="lavender" class="product">
+                    <section class="accordion-body">
+                        <div class="product-image-container">
+                            <img src="images/lavender.png" alt="Lavender ColdBrew">
+                        </div>
+                        <h2 class="li-title">Lavender</h2>
+                        <div class="product-info">
+                            <p>
+                                For an herbal twist in your morning wake-up, lavender cold brew is perfect for the adventurous. Astringent and earthy, lavender’s light, floral notes balance well with the nutty sweetness of our cold brew.
+                                <br>
+                                <br> Comes in 10 oz bottles
+                                <br>
+                                <em>$3.50 single</em>
+                                <br>
+                                <em>$8.05 6 pack</em>
+                            </p>
+                            <br>
+                            <input type="Order Now!" value="Order Now!" class="button" />
+                        </div>
+                    </section>
+                    <section class="accordion-key">
+                        <h1>Lavender</h1>
+                    </section>
                 </li>
 
+                <li id="honey" class="product">
+                    <section class="accordion-body">
+                        <div class="product-image-container">
+                            <img src="images/honey.png" alt="honey ColdBrew">
+                        </div>
+                        <h2 class="li-title">honey</h2>
+                        <div class="product-info">
+                            <p>
+                                Described as floral and sometimes fruity, our honey flavored cold brew naturally sweetens your morning. Honey’s earthy sweetness lights up our locally sourced coffee brew and is made with naturally sourced honey from healthy Oregon bees.
+                                <br>
+                                <br> Comes in 10 oz bottles
+                                <br>
+                                <em>$3.50 single</em>
+                                <br>
+                                <em>$8.05 6 pack</em>
+                            </p>
+                            <br>
+                            <input type="Order Now!" value="Order Now!" class="button" />
+                        </div>
+                    </section>
+                    <section class="accordion-key">
+                        <h1>Honey</h1>
+                    </section>
+                </li>
 
-            <div id="cardomom-image">
-            <img src="images/cardomom-cutout.png" alt="Cardomom Cold Brew">
-            </div> 
-                <p>
-                <li><h2 id="cardomom">Cardomom</h2></li>
+                <li id="cardomom" class="product">
+                    <section class="accordion-body">
+                        <div class="product-image-container">
+                            <img src="images/cardomom-cutout.png" alt="cardomom ColdBrew">
+                        </div>
+                        <h2 class="li-title">Cardomom</h2>
+                        <div class="product-info">
+                            <p>
+                                Sweet with a little spice, the cardamom flavored cold brew is inspired by Turkish coffee. Containing all the rich flavor of traditional Turkish coffee with the caffeination perk of a cold brew, the warm notes of cardamom carry you comfortably into a world
+                                of caffeination.
+                                <br>
+                                <br> Comes in 10 oz bottles
+                                <br>
+                                <em>$3.50 single</em>
+                                <br>
+                                <em>$8.05 6 pack</em>
+                            </p>
+                            <br>
+                            <input type="Order Now!" value="Order Now!" class="button" />
+                        </div>
+                    </section>
+                    <section class="accordion-key">
+                        <h1>Cardomom</h1>
+                    </section>
+                </li>
+            </ul>
+        </section>
 
-                <li><div class="product-info">
-                Sweet with a little spice, the cardamom flavored cold brew is inspired by Turkish coffee. Containing all the rich flavor of traditional Turkish coffee with the caffeination perk of a cold brew, the warm notes of cardamom carry you comfortably into a world of caffeination.
-                <br>
-                <br>
-                Comes in 10 oz bottles
-                <br>
-                <em>$3.50 sinlge</em>
-                <br>
-                <em>$8.05 6 pack</em></p>
-                <br>
-                <input type="Order Now!" value="Order Now!" class="button"/>
-            </div>
-            </li>
-        </ul>
-        </div>
-    </main>
+    </body>
+    
+    <!-- inside of main, footer goes third -->
+    <footer>
+        <nav>
+            <P>Jobs</P>
+            <br>
+            <p>FAQ</p>
+            <br>
+            <p>Terms and Conditions</p>
+            <br>
+            <p>Privacy Policy</p>
+            <br>
+            <p>&#169 Ladd Cold Brew Inc.</p>
+        </nav>
+    </footer>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script> 
-
-</body>
-
-<footer>
-    <nav> 
-        <P>Jobs</P>
-        <br>
-        <p>FAQ</p>
-        <br>
-        <p>Terms and Conditions</p>
-        <br>
-        <p>Privacy Policy</p>
-        <br>
-        <p>&#169 Ladd Cold Brew Inc.</p>
-    </nav>
-</footer>
 </html>
