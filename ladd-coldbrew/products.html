@@ -68,7 +68,7 @@
                             <input type="Order Now!" value="Order Now!" class="button" />
                         </div>
                     </section>
-                    <section class="accordion-key">
+                    <section class="accordion-key lavendar-tab">
                         <h1>Lavender</h1>
                     </section>
                 </li>
@@ -93,13 +93,13 @@
                             <input type="Order Now!" value="Order Now!" class="button" />
                         </div>
                     </section>
-                    <section class="accordion-key">
+                    <section class="accordion-key honey-tab">
                         <h1>Honey</h1>
                     </section>
                 </li>
 
                 <li id="cardomom" class="product">
-                    <section class="accordion-body">
+                    <section class="accordion-body cardomom-tab">
                         <div class="product-image-container">
                             <img src="images/cardomom-cutout.png" alt="cardomom ColdBrew">
                         </div>
@@ -144,6 +144,19 @@
     </footer>
 </main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $('.honey-tab').click(function(){
+        $('#honey').css('z-index', '2')
+        $('#cardomom').css('z-index', '0')
+        $('#lavendar').css('z-index', '0')
+    })
+    $('.lavendar-tab').click(function(){
+        $('#honey').css('z-index', '0')
+        $('#cardomom').css('z-index', '0')
+        $('#lavendar').css('z-index', '2')
+    })
+    
+</script>
 <script type="text/javascript" src="js/script.js"></script>
 
 </html>

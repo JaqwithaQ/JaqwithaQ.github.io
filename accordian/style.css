@@ -1,0 +1,31 @@
+*{box-sizing: border-box;}
+body {
+	background: antiquewhite;
+	padding: 0;
+	margin: 0;
+}
+#horizontalAccordion {
+	padding: 0;
+	margin:0;
+	background: #ccc;
+	width:860px;
+	margin: 10px auto;
+}
+#horizontalAccordion>li {
+	display:inline-block;
+	vertical-align:top;
+}
+#horizontalAccordion>li:nth-child(even){
+	width:130px;
+	height:200px;
+	overflow: hidden;
+}
+#horizontalAccordion>li:nth-child(odd){
+	background: goldenrod;
+	transform: rotate(270deg)
+	-ms-transform:rotate(270deg);
+	-webkit-transform:rotate(270deg);
+	width: 200px; /* actually the height */
+	height: 30px; /* actually the width */
+	margin: 85px -85px;
+}
