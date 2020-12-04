@@ -96,35 +96,6 @@ nav {
 }
 
 
-/* #lavender-image {
-    width: 90vw;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-} */
-
-
-/* #honey-image {
-    width: 50%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-} */
-
-
-/* #cardomom-image {
-    width: 50%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-} */
-
 #lavender {
     color: blue;
     text-align: center;
@@ -139,11 +110,6 @@ nav {
     color: #DD5A44;
     text-align: center;
 }
-
-/* h2 {
-    font-size: 36px;
-    color: #914712;
-} */
 
 .product-info {
     text-align: left;
