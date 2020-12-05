@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- from this tutorial https://youtu.be/pZ2HOj_MFNs -->
+    <ul id="horizontalAccordion">
+      <li>
+        <section class="accordion-body">
+          <div class="product-image-container">
+            <img src="images/lavender.png" alt="Lavender ColdBrew" />
+          </div>
+          <h2 class="li-title">Lavender</h2>
+          <div class="product-info">
+            <p>
+              For an herbal twist in your morning wake-up, lavender cold brew is perfect for the adventurous. Astringent and earthy, lavender’s light, floral notes balance well with the nutty sweetness of our cold brew.
+              <br />
+              <br />
+              Comes in 10 oz bottles
+              <br />
+              <em>$3.50 single</em>
+              <br />
+              <em>$8.05 6 pack</em>
+            </p>
+            <br />
+            <input type="Order Now!" value="Order Now!" class="button" />
+          </div>
+        </section>
+      </li>
+      <li class="accordion-key" id="lavendar"><h1>Lavender</h1></li>
+
+      <li>
+        <section class="accordion-body">
+          <div class="product-image-container">
+            <img src="images/honey.png" alt="honey ColdBrew" />
+          </div>
+          <h2 class="li-title">honey</h2>
+          <div class="product-info">
+            <p>
+              Described as floral and sometimes fruity, our honey flavored cold brew naturally sweetens your morning. Honey’s earthy sweetness lights up our locally sourced coffee brew and is made with naturally sourced honey from healthy Oregon bees.
+              <br />
+              <br />
+              Comes in 10 oz bottles
+              <br />
+              <em>$3.50 single</em>
+              <br />
+              <em>$8.05 6 pack</em>
+            </p>
+            <br />
+            <input type="Order Now!" value="Order Now!" class="button" />
+          </div>
+        </section>
+      </li>
+      <li class="accordion-key honey-tab" id="honey">
+        <h1>Honey</h1>
+      </li>
+
+      <li>
+        <section class="accordion-body cardomom-tab">
+          <div class="product-image-container">
+            <img src="images/cardomom-cutout.png" alt="cardomom ColdBrew" />
+          </div>
+          <h2 class="li-title">Cardomom</h2>
+          <div class="product-info">
+            <p>
+              Sweet with a little spice, the cardamom flavored cold brew is inspired by Turkish coffee. Containing all the rich flavor of traditional Turkish coffee with the caffeination perk of a cold brew, the warm notes of cardamom carry you comfortably into a world of caffeination.
+              <br />
+              <br />
+              Comes in 10 oz bottles
+              <br />
+              <em>$3.50 single</em>
+              <br />
+              <em>$8.05 6 pack</em>
+            </p>
+            <br />
+            <input type="Order Now!" value="Order Now!" class="button" />
+          </div>
+        </section>
+      </li>
+      <li class="accordion-key cardomom-tab" id="cardomom">
+        <h1>Cardomom</h1>
+      </li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script>
+      $("#horizontalAccordion>li:nth-child(odd)").children().hide()
+      $("#horizontalAccordion>li:nth-child(even)").click(function () {
+        $("#horizontalAccordion>li:nth-child(odd)").css("background", "#fff3dd")
+        $(this).prev().css("background", "white")
+        $("#horizontalAccordion>li:nth-child(odd)").children().hide()
+        $(this).prev().children().fadeIn(2500)
+        $("#horizontalAccordion>li:nth-child(odd)").animate({ width: "3%" }, { duration: 500, queue: false })
+        $(this).prev().animate({ width: "60%" }, { duration: 500, queue: false })
+      })
+    </script>
+  </body>
+</html>

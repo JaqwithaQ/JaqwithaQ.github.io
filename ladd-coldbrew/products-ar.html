@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Ladd Cold Brew: Products">
+    <meta property="og:description" content="Three distinct flavors!">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://jaqwithaq.github.io/ladd-coldbrew/products.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="css/style-ar.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Products</title>
+</head>
+<body class="products-page">
+<main>
+    <!-- inside of main, header goes first -->
+    <header>
+        <nav class="nav">
+            <div id="logo">
+                <img src="images/logo.png" alt="Ladd Cold Brew" /></a>
+            </div>
+            <div class="icon">
+                <div class="hamburger"></div>
+            </div>
+            <div class="menu-mobile">
+                <a href="index.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="locations.html">Locations</a>
+            </div>
+        </nav>
+        <nav class="desktop">
+            <div class="menu-desktop">
+                <a href="index.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="locations.html">Locations</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- inside of main, body goes second -->
+
+        <section class="products">
+            <ul id="horizontalAccordion">
+      <li>
+        <section class="accordion-body">
+          <div class="product-image-container">
+            <img src="images/lavender.png" alt="Lavender ColdBrew" />
+          </div>
+          <h2 class="li-title">Lavender</h2>
+          <div class="product-info">
+            <p>
+              For an herbal twist in your morning wake-up, lavender cold brew is perfect for the adventurous. Astringent and earthy, lavender’s light, floral notes balance well with the nutty sweetness of our cold brew.
+              <br />
+              <br />
+              Comes in 10 oz bottles
+              <br />
+              <em>$3.50 single</em>
+              <br />
+              <em>$8.05 6 pack</em>
+            </p>
+            <br />
+            <input type="Order Now!" value="Order Now!" class="button" />
+          </div>
+        </section>
+      </li>
+      <li class="accordion-key active" id="lavender"><h1>Lavender</h1></li>
+
+      <li>
+        <section class="accordion-body">
+          <div class="product-image-container">
+            <img src="images/honey.png" alt="honey ColdBrew" />
+          </div>
+          <h2 class="li-title">honey</h2>
+          <div class="product-info">
+            <p>
+              Described as floral and sometimes fruity, our honey flavored cold brew naturally sweetens your morning. Honey’s earthy sweetness lights up our locally sourced coffee brew and is made with naturally sourced honey from healthy Oregon bees.
+              <br />
+              <br />
+              Comes in 10 oz bottles
+              <br />
+              <em>$3.50 single</em>
+              <br />
+              <em>$8.05 6 pack</em>
+            </p>
+            <br />
+            <input type="Order Now!" value="Order Now!" class="button" />
+          </div>
+        </section>
+      </li>
+      <li class="accordion-key honey-tab" id="honey">
+        <h1>Honey</h1>
+      </li>
+
+      <li>
+        <section class="accordion-body cardomom-tab">
+          <div class="product-image-container">
+            <img src="images/cardomom-cutout.png" alt="cardomom ColdBrew" />
+          </div>
+          <h2 class="li-title">Cardomom</h2>
+          <div class="product-info">
+            <p>
+              Sweet with a little spice, the cardamom flavored cold brew is inspired by Turkish coffee. Containing all the rich flavor of traditional Turkish coffee with the caffeination perk of a cold brew, the warm notes of cardamom carry you comfortably into a world of caffeination.
+              <br />
+              <br />
+              Comes in 10 oz bottles
+              <br />
+              <em>$3.50 single</em>
+              <br />
+              <em>$8.05 6 pack</em>
+            </p>
+            <br />
+            <input type="Order Now!" value="Order Now!" class="button" />
+          </div>
+        </section>
+      </li>
+      <li class="accordion-key cardomom-tab" id="cardomom">
+        <h1>Cardomom</h1>
+      </li>
+    </ul>
+        </section>
+
+        
+
+
+    
+    <!-- inside of main, footer goes third -->
+    <footer>
+        <nav>
+            <P>Jobs</P>
+            <br>
+            <p>FAQ</p>
+            <br>
+            <p>Terms and Conditions</p>
+            <br>
+            <p>Privacy Policy</p>
+            <br>
+            <p>&#169 Ladd Cold Brew Inc.</p>
+        </nav>
+    </footer>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+      $("#horizontalAccordion>li:nth-child(odd)").children().hide()
+      $("#horizontalAccordion>li:nth-child(1)").children().show()
+      $("#horizontalAccordion>li:nth-child(1)").animate({ width: "60%" }, { duration: 500, queue: false })
+      $("#horizontalAccordion>li:nth-child(even)").click(function () {
+        $("#horizontalAccordion>li:nth-child(odd)").css("background", "#fff3dd")
+        $("#horizontalAccordion>li:nth-child(odd)").children().hide()
+        $(this).prev().children().fadeIn(2500)
+        $("#horizontalAccordion>li:nth-child(odd)").animate({ width: "3%" }, { duration: 500, queue: false })
+        $(this).prev().animate({ width: "60%" }, { duration: 500, queue: false })
+      })
+    </script>
+
+    </body>
+</html>

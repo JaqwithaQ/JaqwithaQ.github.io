@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+/* start of accordion */
+.button {
+  padding: 8px;
+  width: 25%;
+  background-color: #914712;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 12px;
+  margin: auto;
+}
+
+.product-image-container img {
+  height: 70vh;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#lavender {
+  color: blue;
+  text-align: center;
+}
+
+#honey {
+  color: #efbc4d;
+  text-align: center;
+}
+
+#cardomom {
+  color: #dd5a44;
+  text-align: center;
+}
+
+.product-info {
+  text-align: left;
+}
+
+#horizontalAccordion {
+  padding: 0;
+  margin: 0;
+  width: 90vw;
+  margin: 10px auto;
+}
+#horizontalAccordion > li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+#horizontalAccordion > li:nth-child(odd) {
+  width: 28%;
+  height: 600px;
+  overflow: hidden;
+}
+#horizontalAccordion > li:nth-child(even) h1 {
+  transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  margin: 85px -85px;
+}
+#horizontalAccordion > li:nth-child(even) {
+  height: 600px; /* actually the height */
+  width: 4%; /* actually the width */
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 600px;
+}
+#lavender {
+  width: 100vw;
+}
+#honey {
+  width: 88vw;
+  z-index: 1;
+}
+#cardomom {
+  width: 78vw;
+  z-index: 2;
+}
+.product-image-container {
+  display: flex;
+  justify-content: center;
+  /* background: cyan; */
+  background: #fff3dd;
+  padding-left: 1em;
+}
+.product-image-container img {
+  height: 70vh;
+  width: auto;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background: green; */
+}
+.product-info p {
+  text-align: left;
+  padding-top: 8em;
+  margin: 0;
+}
+.accordion-body {
+  /* background: pink; */
+  background: #fff3dd;
+  display: flex;
+  /* flex-direction: column; */
+  justify-items: center;
+}
+.accordion-key {
+  background: #fff3dd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  border-right: #914712 solid 8px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.accordion-key h1 {
+  font-size: 40px;
+  transform: rotate(90deg);
+  transform-origin: center;
+  margin: 0;
+  padding: 0;
+}
+/* end of accordion */
