@@ -116,7 +116,7 @@ nav {
   margin: 0;
 }
 #horizontalAccordion > li:nth-child(odd) {
-  width: 28%;
+  width: 2%;
   height: 600px;
   overflow: hidden;
 }
