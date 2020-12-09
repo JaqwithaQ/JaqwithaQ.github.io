@@ -45,6 +45,7 @@ nav {
 
 .landing {
   padding-top: 5em;
+  position: relative;
 }
 
 .landing img {
@@ -55,6 +56,8 @@ nav {
   width: 75%;
   height: auto;
 }
+#one {background-image: url(../images/Location-Images/ladds-replacement.jpg) ; background-size: 75%;}
+#two {}
 
 #landing-about {
   display: block;
