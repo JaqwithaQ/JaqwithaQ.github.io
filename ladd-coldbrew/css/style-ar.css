@@ -92,6 +92,14 @@ nav {
   text-align: center;
 }
 
+h2{
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+
 #honey {
   color: #efbc4d;
   text-align: center;
@@ -165,6 +173,8 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
   /* background: green; */
 }
 .product-info p {
