@@ -56,8 +56,6 @@ nav {
   width: 75%;
   height: auto;
 }
-#one {background-image: url(../images/Location-Images/ladds-replacement.jpg) ; background-size: 75%;}
-#two {}
 
 #landing-about {
   display: block;
@@ -66,6 +64,7 @@ nav {
   text-align: left;
   font-family: "Raleway", sans-serif;
   font-weight: medium;
+  font-size: 30px;
 }
 /* start of accordion */
 .button {
@@ -198,6 +197,27 @@ nav {
   padding: 0;
 }
 /* end of accordion */
+
+/* animation begin */
+
+#animation {
+  margin: 0;
+  text-align: center;
+}
+
+#cap {
+  animation: cap 1s ease-in-out infinite;
+}
+
+@keyframes cap{
+  from{
+transform: rotateX(0deg)
+  }
+  to{
+transform: rotateX(20deg);
+  }
+}
+/* animation end */
 
 .location {
   display: vertical;

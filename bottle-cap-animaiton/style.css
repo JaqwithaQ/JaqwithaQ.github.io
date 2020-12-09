@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+#animation {
+    margin-top: 5em;
+  }
+  
+  #cap {
+    animation: cap 1s ease-in-out infinite;
+  }
+  
+  @keyframes cap{
+    from{
+  transform: rotateX(0deg)
+    }
+    to{
+  transform: rotateX(20deg);
+    }
+  }
