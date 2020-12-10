@@ -91,7 +91,7 @@
           </div>
         </section>
       </li>
-      <li class="accordion-key honey-tab" id="honey">
+      <li class="accordion-key" id="honey">
         <h1>Honey</h1>
       </li>
 
@@ -117,7 +117,7 @@
           </div>
         </section>
       </li>
-      <li class="accordion-key cardomom-tab" id="cardomom">
+      <li class="accordion-key" id="cardomom">
         <h1>Cardomom</h1>
       </li>
     </ul>
@@ -142,7 +142,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-      $("#horizontalAccordion>li:nth-child(odd)").children().hide()
       $("#horizontalAccordion>li:nth-child(1)").children().show()
       $("#horizontalAccordion>li:nth-child(1)").animate({ width: "60%" }, { duration: 500, queue: false })
       $("#horizontalAccordion>li:nth-child(even)").click(function () {
@@ -152,6 +151,18 @@
         $("#horizontalAccordion>li:nth-child(odd)").animate({ width: "3%" }, { duration: 500, queue: false })
         $(this).prev().animate({ width: "60%" }, { duration: 500, queue: false })
       })
+
+      $(window).resize(function(){     
+        if ($('html').width() < 786 ){
+          $("#horizontalAccordion>li:nth-child(odd)").css({ width: "auto" })
+          $("#horizontalAccordion>li:nth-child(odd)").children().show()
+        }
+        if($('html').width() > 786 ) {
+          $("#horizontalAccordion>li:nth-child(1)").animate({ width: "60%" }, { duration: 10, queue: false })
+          $("#horizontalAccordion>li:nth-child(odd)").css({ width: "3%" })
+          $("#horizontalAccordion>li:nth-child(odd)").children().show()
+        }
+      });
     </script>
 
     </body>
