@@ -1,21 +1,25 @@
 body {
     margin: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 #animation {
     margin-top: 5em;
+    position: relative;
   }
   
-  #cap {
-    animation: cap 1s ease-in-out infinite;
-  }
+#cap {
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
   
-  @keyframes cap{
-    from{
-  transform: rotateX(0deg)
-    }
-    to{
-  transform: rotateX(20deg);
-    }
+@keyframes bounce{
+  from{ transform3d (0, 0, 0);
+/* transform: rotateX(0deg) */
   }
+  to{ transform3d (0, 200px, 0);
+/* transform: rotateX(20deg); */
+  }
+}

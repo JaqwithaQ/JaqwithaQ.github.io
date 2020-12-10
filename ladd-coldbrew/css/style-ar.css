@@ -90,10 +90,18 @@ nav {
 
 #animation {
   margin: 0;
-  text-align: center;
+
+  animation: bounce 0.5;
+  animation-direction: alternate;
+  animation-timing-function:  cubic-bezier(.5, 0.05,1,.5);
+  animation-iteration-count: infinite;
 }
 
-#cap {
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 200px, 0); }
+}
+/* #cap {
   animation: cap 1s ease-in-out infinite;
 }
 
@@ -104,7 +112,7 @@ transform: rotateX(0deg)
   to{
 transform: rotateX(20deg);
   }
-}
+} */
 /* animation end */
 
 .location {
